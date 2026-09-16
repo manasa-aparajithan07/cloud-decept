@@ -1,0 +1,1 @@
+# CloudDecept Collector Package

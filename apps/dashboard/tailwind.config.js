@@ -1,0 +1,98 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: 'class',
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        cyber: {
+          950: '#020612',
+          900: '#040816',
+          850: '#070e22',
+          800: '#0a142e',
+          750: '#0f1d40',
+          700: '#142654',
+          600: '#1e3878',
+          500: '#2c4fa3',
+        },
+        neon: {
+          cyan: '#00f0ff',
+          teal: '#00ffc4',
+          emerald: '#10b981',
+          amber: '#f59e0b',
+          rose: '#ff3366',
+          purple: '#b026ff',
+          blue: '#3b82f6',
+        },
+        primary: {
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e',
+          600: '#16a34a',
+          700: '#15803d',
+          800: '#166534',
+          900: '#14532d',
+        },
+        danger: {
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#ef4444',
+          600: '#dc2626',
+          700: '#b91c1c',
+          800: '#991b1b',
+          900: '#7f1d1d',
+        },
+        warning: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f',
+        },
+      },
+      boxShadow: {
+        'neon-cyan': '0 0 20px rgba(6, 182, 212, 0.35)',
+        'neon-teal': '0 0 20px rgba(20, 184, 166, 0.35)',
+        'neon-rose': '0 0 20px rgba(244, 63, 94, 0.35)',
+        'neon-amber': '0 0 20px rgba(245, 158, 11, 0.35)',
+        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+      },
+      keyframes: {
+        'flow': {
+          '0%': { strokeDashoffset: '100' },
+          '100%': { strokeDashoffset: '0' },
+        },
+        'radar': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'pulse-glow': {
+          '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+          '50%': { opacity: '1', transform: 'scale(1.05)' },
+        },
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-glow': 'pulse-glow 2.5s ease-in-out infinite',
+        'spin-slow': 'spin 12s linear infinite',
+        'flow': 'flow 3s linear infinite',
+      },
+    },
+  },
+  plugins: [],
+};
