@@ -1,0 +1,99 @@
+# CloudDecept .gitignore
+
+# Docker / Build
+*.log
+*.pid
+docker-compose.override.yml
+docker-compose.prod.yml
+
+# Data (too large for git)
+**/honeypot_data/
+**/logs/
+**/data/raw/
+**/data/anonymized/
+!**/data/schema.json
+
+# ClickHouse data
+**/clickhouse_data/
+**/var/lib/clickhouse/
+
+# PostgreSQL data
+**/postgres_data/
+
+# Ollama models
+**/ollama_data/
+**/.ollama/
+
+# Redis data
+**/redis_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+out/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Secrets
+*.pem
+*.key
+*.crt
+id_rsa*
+oracle_cloud*
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Research outputs
+research/paper/figures/*.pdf
+research/paper/figures/*.png
+research/paper/*.aux
+research/paper/*.bbl
+research/paper/*.blg
+research/paper/*.log
+research/paper/*.out
+research/paper/*.toc
+
+# Backup
+*.bak
+*.backup
+*~
+
+# Temporary scratch & audit scripts
+scratch/
