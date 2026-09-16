@@ -1,0 +1,29 @@
+# Cowrie user database
+# Format for Cowrie UserDB parser: username:x:password (password at index 2)
+# The "x" is a placeholder, password is at position 2 (third field)
+
+root:x:root
+root:x:admin
+root:x:password
+root:x:123456
+root:x:ubuntu
+root:x:ubuntu123
+root:x:admin123
+admin:x:admin
+admin:x:password
+admin:x:admin123
+ubuntu:x:ubuntu
+ubuntu:x:ubuntu123
+ubuntu:x:password
+user:x:user
+user:x:password
+test:x:test
+test:x:test123
+oracle:x:oracle
+centos:x:centos
+ec2-user:x:ec2-user
+azureuser:x:azureuser
+gcp-user:x:gcp-user
+admin:x:P@ssw0rd
+root:x:P@ssw0rd
+ubuntu:x:P@ssw0rd
