@@ -1,0 +1,62 @@
+{
+  "session": {
+    "session_id": "string",
+    "start_time": "ISO8601",
+    "end_time": "ISO8601",
+    "duration_seconds": "int",
+    "attacker_ip": "string",
+    "attacker_country": "string",
+    "attacker_asn": "string",
+    "cloud_provider": "aws|azure|gcp",
+    "org_profile": "string",
+    "primary_intent": "string",
+    "intent_confidence": "float",
+    "skill_level": "int",
+    "status": "active|completed",
+    "commands_count": "int",
+    "adaptations_count": "int"
+  },
+  "command": {
+    "session_id": "string",
+    "timestamp": "ISO8601",
+    "command": "string",
+    "output": "string",
+    "intent": "string",
+    "confidence": "float",
+    "adaptation_applied": "bool",
+    "adaptation_strategy": "string"
+  },
+  "cloud_api_call": {
+    "session_id": "string",
+    "timestamp": "ISO8601",
+    "endpoint": "string",
+    "method": "string",
+    "cloud_provider": "string",
+    "request_body": "object",
+    "response_body": "object",
+    "intent": "string",
+    "adapted": "bool"
+  },
+  "mitre_technique": {
+    "session_id": "string",
+    "technique_id": "string",
+    "technique_name": "string",
+    "tactic": "string",
+    "severity": "critical|high|medium|low",
+    "trigger": "string",
+    "detected_at": "ISO8601"
+  },
+  "ioc": {
+    "session_id": "string",
+    "ioc_type": "string",
+    "ioc_value": "string",
+    "confidence": "float",
+    "context": "string"
+  },
+  "session_summary": {
+    "session_id": "string",
+    "summary": "object",
+    "risk_level": "critical|high|medium|low",
+    "generated_at": "ISO8601"
+  }
+}
